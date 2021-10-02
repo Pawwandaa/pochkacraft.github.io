@@ -1,0 +1,184 @@
+a{
+	text-decoration: none;
+	color: grey;
+}
+a:hover{
+	color: blue;
+}
+footer{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:  13px;
+}
+.div-first-atall{
+	background-color: #F4F4F4;
+	padding: 65px;
+}
+.div-second-atall{
+
+
+}
+.div-third-atall{
+	background-color: #F4F4F4;
+	padding: 65px;
+}
+.div-second{
+	display: block;
+	margin-right: auto;
+	margin-left:auto;
+	margin-top:50px;
+	text-align: center;
+	padding: 15px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.div-first{
+	display: block;
+
+	text-align: right;
+
+}
+.div-first p{
+
+margin-right: 40px;
+font-size: 20px;
+font-family: 'Open Sans', sans-serif;
+
+}
+
+
+.online{
+	text-align: top;
+	margin-top: 1px;
+	display: block;
+}
+
+.head{
+	position: fixed;
+	width: 100%;
+	text-align: right;
+	padding-bottom: 15px;
+	
+}
+.logo{
+	margin-left: 5px;
+	display: block;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+header{
+	background-image: url('1.jpg') ;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position: top;
+	background-size: cover;
+	
+	
+	color: #fff;
+	padding-top: 27px;
+	padding-bottom: 32px;
+}
+header{
+	width: 100%;
+}
+body {
+	padding: 0;
+	margin: 0;
+	color: black;
+	font-size: 16px;
+}
+
+.offer {
+	text-transform: uppercase;
+	margin-top: 46px;
+	text-align: center;
+}
+
+.offer p {
+	font-size: 30px;
+	letter-spacing: 0.1em;
+}
+
+.offer h1 {
+	font-size: 100px;
+	margin-bottom: 19px;
+	margin-top: -9px;
+	letter-spacing: 0.02em
+}
+.toptitle{
+	margin: 0;
+	color: orange;
+}
+
+.btn {
+
+	font-size: 17px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	padding: 7px 15px;
+	border: 1px solid #fff;
+	
+	transition: all 0.5s ease;
+	margin-right: 15px;
+	margin-top: 20px;
+	display: inline-block;
+
+	color: white;
+	
+}
+
+.btn:hover {
+	background: #fff;
+    color: #000;
+}
+.price{
+	font-size: 100px;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+.gif{
+	/*position: absolute;*/
+	float: left;
+	/*left: 2;*/
+	margin:0;
+	padding: 15px;
+}
+.btn-two {
+
+	font-size: 17px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	padding: 7px 15px;
+	border: 1px solid black;
+	
+	transition: all 0.5s ease;
+	margin-right: 15px;
+	margin-top: 20px;
+	display: inline-block;
+
+	color: black;
+	
+}
+
+.btn-two:hover {
+	background: black;
+    color: white;
+}
+footer{
+	background-color: #232629;
+	padding: 30px;
+
+}
+footer a{
+	margin: 15px;
+}
+footer text{
+	color: grey;
+}
+#server-online-players{
+	color: black;
+}
