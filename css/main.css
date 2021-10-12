@@ -1,3 +1,10 @@
+.mainp{
+	color: white;
+}
+.map{
+	display: block;
+	align-content: left;
+}
 a{
 	text-decoration: none;
 	color: grey;
@@ -71,7 +78,7 @@ font-family: 'Open Sans', sans-serif;
 }
 
 header{
-	background-image: url('1.jpg') ;
+	background-image: url('2.jpg') ;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-position: top;
@@ -111,7 +118,7 @@ body {
 }
 .toptitle{
 	margin: 0;
-	color: orange;
+	color: #ff6c22;
 }
 
 .btn {
@@ -180,5 +187,5 @@ footer text{
 	color: grey;
 }
 #server-online-players{
-	color: black;
+	color: white;
 }
