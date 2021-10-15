@@ -27,7 +27,7 @@ footer{
 
 }
 .div-third-atall{
-	background-color: #F4F4F4;
+	background-color: #EEEEEE;
 	padding: 65px;
 }
 .div-second{
@@ -188,4 +188,11 @@ footer text{
 }
 #server-online-players{
 	color: white;
+}
+
+hr {
+    border: none; /* Убираем границу */
+    background-color: black; /* Цвет линии */
+    color: red; /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */
 }
