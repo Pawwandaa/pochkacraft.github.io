@@ -1,7 +1,40 @@
+.text-bg{
+	background-color: black;
+}
+.text-block {
+    display: block;
+	background-color: #3f3f44; 
+  	border: none;
+  	color: white;
+  	padding: 15px 32px;
+  	text-align: left;
+  	text-decoration: none;
+  	font-size: 23px;
+  	border-radius:9px;
+  	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0;
+	font-family: 'Roboto', sans-serif;
+}
+div.fix_block {
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
 .freedays-link{
-color: red;
+color: white;
 font-family: 'Open Sans', sans-serif;
-display: none;
+display: block;
+text-decoration: underline;
+}
+h1{
+	font-family: 'Open Sans', sans-serif;
+}
+.ivent-link{
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	display: block;
+	text-decoration: underline;
 }
 .mainp{
 	color: white;
@@ -95,6 +128,21 @@ header{
 	padding-bottom: 32px;
 }
 header{
+	width: 100%;
+}
+.header-hallo{
+	background-image: url('race.png') ;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position: top;
+	background-size: cover;
+	
+	
+	color: #fff;
+	padding-top: 27px;
+	padding-bottom: 32px;
+}
+.header-hallo{
 	width: 100%;
 }
 body {
