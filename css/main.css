@@ -20,11 +20,12 @@ div.fix_block {
   right: 0;
   bottom: 0;
   position: fixed;
+  display:none;
 }
 .freedays-link{
 color: white;
 font-family: 'Open Sans', sans-serif;
-display: block;
+display: none;
 text-decoration: underline;
 }
 h1{
@@ -33,7 +34,7 @@ h1{
 .ivent-link{
 	color: white;
 	font-family: 'Open Sans', sans-serif;
-	display: block;
+	display: none;
 	text-decoration: underline;
 }
 .mainp{
