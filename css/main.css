@@ -1,5 +1,187 @@
+body{
+	background-color: #18181B;
+}
+/*МЕНЮ*/
+/* The container <div> - needed to position the dropdown content */
+.setdown {
+    position: relative;
+    display: block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.setdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.setdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin-right: 100px;
+}
+
+/* Change color of dropdown links on hover */
+.setdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.setdown:hover .setdown-content {display: block;}
+
+
+ /* Dropdown Button */
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+ @media (max-width: 1024px) 
+{ 
+
+
+}
+.wiki{
+	background-color: white;
+	border-radius: 7px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	/*padding:35px;*/
+	padding-left:20px;
+	padding-right:20px; 
+	color: black;
+	margin-top: 20px;
+	margin-left: 13px;
+
+	width: 29%;
+	/*width: 55%;*/
+	
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	display: inline-block;
+}
+.question{
+	background-color: white;
+	border-radius: 7px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	/*padding:35px;*/
+	padding-left:20px;
+	padding-right:20px; 
+	color: black;
+	margin-top: 20px;
+	margin-left: 13px;
+
+	width: 29%;
+	/*width: 55%;*/
+	
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	display: inline-block;
+}
+.textik{
+	width: 90%;
+}
+.gif{
+	/*position: absolute;*/
+	float: right;
+	/*left: 2;*/
+	margin:0;
+	padding: 15px;
+}
+#menubutton
+{
+	text-align: center;
+	margin-right: 15px;
+	margin-top: 20px;
+	display: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 1px;
+    right: 100px;
+}
+.head{
+	position: fixed;
+	width: 100%;
+	text-align: right;
+	padding-bottom: 15px;
+	
+}
+@media (max-width: 980px) 
+{ 
+.question{
+	width: 70%;
+}
+.wiki{
+	width: 70%;
+}
+.textik{
+	display: block;
+	width: 90%;
+	margin-top: 50px;
+	text-align: center;
+	white-space: normal;
+}	
+.gif{
+	display: block;
+	margin:auto;
+
+}	
+.head{
+	position: fixed;
+	width: 100%;
+	text-align: right;
+	padding-bottom: 80px;
+	
+}
+.realmenu
+{
+    display: none;
+}
+
+#menubutton
+{
+    display: block;
+}
+
+
+/*Закончили с меню*/
 .text-bg{
 	background-color: black;
+}
 }
 .text-block {
     display: block;
@@ -20,7 +202,7 @@ div.fix_block {
   right: 0;
   bottom: 0;
   position: fixed;
-  display:none;
+  display: none;
 }
 .freedays-link{
 color: white;
@@ -28,14 +210,25 @@ font-family: 'Open Sans', sans-serif;
 display: none;
 text-decoration: underline;
 }
+
 h1{
 	font-family: 'Open Sans', sans-serif;
+}
+.questtext{
+	
+}
+
+.div-third-atall{
+	background-color: #111111;
+	text-align: center;
+
 }
 .ivent-link{
 	color: white;
 	font-family: 'Open Sans', sans-serif;
-	display: none;
+	display: block;
 	text-decoration: underline;
+	display: none;
 }
 .mainp{
 	color: white;
@@ -44,6 +237,40 @@ h1{
 	display: block;
 	align-content: left;
 }
+.buy{
+	color: white;
+	background-color: #0D9488;
+	padding: 8px;
+
+	border-radius: 5px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	display: inline-flex;
+	font-family: 'Roboto', sans-serif;
+}
+.buy:hover{
+	background-color: #0b857a;
+	color: white;
+}
+.copy{
+	color: black;
+	background-color: #F4F4F5;
+	padding: 8px;
+
+	border-radius: 5px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	display: inline-flex;
+	font-family: 'Roboto', sans-serif;
+	border:none;
+}
+.copy:hover{
+	background-color: #d6d6d6;
+	color: black;
+	border:none;
+	cursor: pointer;
+}
+
 a{
 	text-decoration: none;
 	color: grey;
@@ -58,33 +285,23 @@ footer{
     margin-top:  13px;
 }
 .div-first-atall{
-	background-color: #F4F4F4;
+	background-color: #111111;
 	padding: 65px;
 }
 .div-second-atall{
-
-
-}
-.div-third-atall{
-	background-color: #EEEEEE;
-	padding: 65px;
-}
-.div-second{
-	display: block;
+background-color: #0a0a0a;
+display: block;
 	margin-right: auto;
 	margin-left:auto;
-	margin-top:50px;
 	text-align: center;
-	padding: 15px;
 	font-family: 'Open Sans', sans-serif;
-}
-
-.div-first{
-	display: block;
-
-	text-align: right;
 
 }
+
+.div-fourth-atall{
+background-color:#0a0a0a;
+}
+
 p{
 
 margin-right: 40px;
@@ -100,13 +317,7 @@ font-family: 'Open Sans', sans-serif;
 	display: block;
 }
 
-.head{
-	position: fixed;
-	width: 100%;
-	text-align: right;
-	padding-bottom: 15px;
-	
-}
+
 .logo{
 	margin-left: 5px;
 	display: block;
@@ -125,8 +336,8 @@ header{
 	
 	
 	color: #fff;
-	padding-top: 27px;
-	padding-bottom: 32px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 header{
 	width: 100%;
@@ -149,12 +360,13 @@ header{
 body {
 	padding: 0;
 	margin: 0;
-	color: black;
+	color: white;
 	font-size: 16px;
+	
 }
 
 .offer {
-	text-transform: uppercase;
+	
 	margin-top: 46px;
 	text-align: center;
 }
@@ -177,7 +389,7 @@ body {
 
 .btn {
 
-	font-size: 17px;
+	font-size: 120%;
 	text-align: center;
 	letter-spacing: 0.1em;
 	padding: 7px 15px;
@@ -196,46 +408,55 @@ body {
 	background: #fff;
     color: #000;
 }
-.price{
-	font-size: 100px;
-	margin: 0;
-	font-family: 'Montserrat', sans-serif;
-}
-.gif{
-	/*position: absolute;*/
-	float: left;
-	/*left: 2;*/
-	margin:0;
-	padding: 15px;
-}
-.btn-two {
-
-	font-size: 17px;
+.btn-selected {
+	background: #fff;
+    color: #000;
+    font-size: 120%;
 	text-align: center;
 	letter-spacing: 0.1em;
 	padding: 7px 15px;
-	border: 1px solid black;
+	border: 1px solid #fff;
 	
 	transition: all 0.5s ease;
 	margin-right: 15px;
 	margin-top: 20px;
 	display: inline-block;
 
-	color: black;
+}
+.price{
+	font-size: 100px;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.btn-two {
+
+	font-size: 120%;
+	text-align: center;
+	letter-spacing: 0.1em;
+	padding: 7px 15px;
+	border: 1px solid white;
+	
+	transition: all 0.5s ease;
+	margin-right: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+
+	color: white;
 	
 }
 
 .btn-two:hover {
-	background: black;
-    color: white;
+	background: white;
+    color: black;
 }
 footer{
-	background-color: #232629;
-	padding: 30px;
 
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
 }
 footer a{
-	margin: 15px;
 }
 footer text{
 	color: grey;
@@ -249,4 +470,78 @@ hr {
     background-color: black; /* Цвет линии */
     color: red; /* Цвет линии для IE6-7 */
     height: 2px; /* Толщина линии */
+}
+.media{
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	display: none;
+}
+.superlink{
+	
+
+	padding-right: 90px;
+	padding-left: 90px;
+
+
+	border: 0.2rem solid black;
+	border-radius: 10px;
+	color: white;
+	margin: 40px;
+	text-align: center;
+	
+
+	display: inline-block;
+
+}
+.superlink img{
+	width: 90px;
+	height: 70px;
+	display: inline-block;
+
+}
+#ds{
+	width:80px;
+}
+#ds:hover{
+	background-color: #4752C4;
+	color: white;
+}
+#yt{
+
+}
+#yt:hover{
+	background-color: #E24143;
+	color: white;
+}
+.article{
+    display: block;
+	background-color: #2A2A2E; 
+  	border: none;
+  	color: white;
+  	padding: 15px 32px;
+  	text-decoration: none;
+  	font-size: 20px;
+  	border-radius:9px;
+  	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0;
+	font-family: 'Roboto', sans-serif;
+
+}
+.wiki-list{
+	text-align: center;
+}
+
+.wiki:hover{
+	background-color: #ededed;
+}
+.sponsor{
+	border: 1px solid ;
+	width: 30%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 60px;
+	border-radius: 8px;
 }
