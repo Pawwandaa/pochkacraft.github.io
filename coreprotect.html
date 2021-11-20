@@ -25,15 +25,53 @@ $('.head').css('background','transparent');
 <style type="text/css">#wait{cursor: wait;}</style>
 
 
-<div class="dropdown" id="menubutton">
-  <img src="img/menu.png" class="menubutton" alt="menuknop" width="70px" class="dropbtn">
-  <div class="dropdown-content">
-    <a href="rules" class="btn">Правила</a>
-    <a href="wiki" class="btn">Вики</a>
-    <a href="https://discord.gg/HsxSPyg7RG" class="btn">Дискорд</a>
-	<a href="http://s23.joinserver.ru:25809/" class="btn">PochkaMaps</a>
-  </div>
-</div> 
+<script type="text/javascript">
+//Мобильное меню
+$(function() {
+	var $menu_popup = $('.menu-popup');
+	
+	$(".menu-triger, .menu-close").click(function(){
+		$menu_popup.slideToggle(300, function(){
+			if ($menu_popup.is(':hidden')) {
+				$('body').removeClass('body_pointer');
+			} else {
+				$('body').addClass('body_pointer');
+			}					
+		});  
+		return false;
+	});			
+	
+	$(document).on('click', function(e){
+		if (!$(e.target).closest('.menu').length){
+			$('body').removeClass('body_pointer');
+			$menu_popup.slideUp(300);
+		}
+	});
+});
+
+</script>
+<div class="menu">
+
+		<a class="menu-triger" href="#"></a>
+
+		<div class="menu-popup">
+
+			<a class="menu-close" href="#"></a>
+
+			<ul>
+				<li><a href="rules">Правила</a></li>
+
+				<li><a href="wiki">Вики</a></li>		
+
+				<li><a href="https://discord.gg/HsxSPyg7RG">Дискорд</a></li>
+
+				<li><a href="http://s23.joinserver.ru:25809/">PochkaMaps</a></li>
+
+			</ul>						
+
+		</div>
+
+	</div>
 
 <div class="realmenu">
 	<a href="rules" class="btn">Правила</a>
