@@ -2,6 +2,30 @@ body{
 	background-color: #18181B;
 	font-size: 130%;
 }
+.article{
+    display: block;
+	/*background-color: #2A2A2E; */
+  	border: none;
+  	color: white;
+  	padding: 15px 32px;
+  	text-decoration: none;
+  	font-size: 20px;
+  	border-radius:9px;
+  	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0;
+	font-family: 'Roboto', sans-serif;
+	margin-left: auto;
+    margin-right: auto;
+  	width: 55%;
+}
+.article img{
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 10px;
+}
 /*НОВОЕ МЕНЮ МОБИЛЬНОЕ*/
 .menu-triger {
 	display: none;
@@ -62,7 +86,31 @@ body{
 .body_pointer * {
 	cursor: pointer;
 }
+.donatepay{
+	width: 90%;
+	height: 900px;
 
+	border:none;
+}
+.choice{
+	background-color: white;
+	border-radius: 7px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	/*padding:35px;*/
+	padding-left:20px;
+	padding-right:20px; 
+	color: black;
+	margin-top: 20px;
+	margin-left: 13px;
+
+	width: 29%;
+	/*width: 55%;*/
+	
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	display: inline-block;
+}
 
 
 /*МЕНЮ*/
@@ -94,7 +142,7 @@ body{
 .question{
 	background-color: white;
 	border-radius: 7px;
-	padding-top: 35px;
+
 	padding-bottom: 35px;
 	/*padding:35px;*/
 	padding-left:20px;
@@ -103,7 +151,8 @@ body{
 	margin-top: 20px;
 	margin-left: 13px;
 
-	width: 29%;
+	width: 35%;
+	height: 30%;
 	/*width: 55%;*/
 	
 	font-family: 'Open Sans', sans-serif;
@@ -112,14 +161,17 @@ body{
 	font-size: 130%;
 }
 .textik{
-	width: 90%;
+	width: 60%;
 }
 .gif{
-	/*position: absolute;*/
+	display: inline-block;
 	float: right;
-	/*left: 2;*/
+	/*position: absolute; 
+    bottom: -320px;   
+    right: 60px;
+	
 	margin:0;
-	padding: 15px;
+	padding: 15px;*/
 }
 
 .head{
@@ -134,6 +186,15 @@ body{
 .question{
 	width: 90%;
 }
+.donatepay{
+	width: 80%;
+}
+.article{
+	width: 80%;
+}
+.article img{
+ width: 100%;
+}
 .wiki{
 	width: 70%;
 }
@@ -142,11 +203,17 @@ body{
 	width: 90%;
 	margin-top: 50px;
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 	white-space: normal;
 }	
 .gif{
 	display: block;
-	margin:auto;
+	text-align: center;
+	width: 100%;
+
+}
+.ovca{
 
 }	
 .head{
@@ -202,6 +269,8 @@ text-decoration: underline;
 
 h1{
 	font-family: 'Open Sans', sans-serif;
+	font-size: 65px;
+	font-weight: bold;
 }
 .questtext{
 	
@@ -319,7 +388,7 @@ font-family: 'Open Sans', sans-serif;
 }
 
 header{
-	background-image: url('2.jpg') ;
+	background-image: url('2.gif') ;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-position: top;
@@ -505,30 +574,7 @@ hr {
 	background-color: #E24143;
 	color: white;
 }
-.article{
-    display: block;
-	/*background-color: #2A2A2E; */
-  	border: none;
-  	color: white;
-  	padding: 15px 32px;
-  	text-decoration: none;
-  	font-size: 20px;
-  	border-radius:9px;
-  	margin-right: auto;
-	margin-left: auto;
-	margin-top: 0;
-	font-family: 'Roboto', sans-serif;
-	margin-left: auto;
-    margin-right: auto;
-  	width: 55%;
-}
-.article img{
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	margin-top: 10px;
-}
+
 .wiki-list{
 	text-align: center;
 }
