@@ -1,60 +1,235 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap" rel="stylesheet"> 
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<title>PochkaCraft - 2 сезон</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+	 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"> 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet"> 
+	<meta charset="UTF-8">
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>PochkaCraft</title>
+	<script src="https://mcapi.us/scripts/minecraft.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+<script>
+    MinecraftAPI.getServerStatus('s23.joinserver.ru', {
+        port: 25737 // optional, only if you need a custom port
+    }, function (err, status) {
+        if (err) {
+            return document.querySelector('.server-status').innerHTML = 'Ошибка загрузки статуса.';
+        }
+
+        // you can change these to your own message!
+        document.querySelector('.server-online-players').innerHTML = status.players.now;
+        document.querySelector('.server-online').innerHTML = status.online ? '⬤ Сервер онлайн <style>.server-online{color:LimeGreen; }</style>' : '⬤ Сервер оффлайн<style>.server-online{color:red;}</style>';
+        document.querySelector('.server-online-players-max').innerHTML = status.players.max;
+    });
+
+  //  function copy() {
+  /* Get the text field */
+ // var copyText = document.getElementById("ipadres");
+
+  /* Select the text field */
+  //copyText.select();
+
+  /* Copy the text inside the text field */
+  //document.execCommand("copy");
+
+  /* Alert the copied text */
+ // alert("Ip адрес сервера скопирован");
+
+  function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  alert("Ip адрес сервера скопирован");
+}
+//} 
+</script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+	//Затемнение хеадера
+	$(window).scroll(function () {
+if ($(window).scrollTop() >= 40) {
+$('.head').css('background','#212121');
+} else {
+$('.head').css('background','transparent');
+}
+});
+</script>
+
 </head>
+
 <body>
-	<style type="text/css">
-		.title{
-			
-			font-size: 60px;
-			padding: 50px;
-		}
-		text{
-			font-family: 'Raleway', sans-serif;
-			color: white;
-			font-size: 25px;
-		}
-		a{
-			font-family: 'Raleway', sans-serif;
-			color: grey;
-			text-decoration: none;
-		}
-		a:hover{
-			color: white;
-			text-decoration: underline; ;
-		}
-		.logo{
-			margin-top:  150px;
-		}
-		body{
-			background-color: #111111;
-		}
-		span{
-			color: red;
-		}
-	</style>
+
+<div class="head" >
+	<img src="img/logo.png" width="250px" class="logo">
+	
+<style type="text/css">#wait{cursor: wait;}</style>
 
 
-	<center>
-	<img src="img/logo.png" width="400px" class="logo"><br>
-<text class = "title">МЕЖСЕЗОНЬЕ</text><br>
-<text><span>Сейчас</span> на сервере нету вайтлиста, полная анархия, мясо, матюки и голые...</text><br>
-<text>Но это не надолго, ведь <span>с 1 декабря</span> на Почкекрафт начинается <span>новый сезон!</span></text><br>
-<text>Так то PochkaCraft - ванильный, приватный сервер с платными/бесплатными проходками...</text><br>
-<text>Вся информация, чат, новости и вообще <span>весь движ в </span><a href="https://discord.gg/UF4HFUNJkN">дискорде</a></text><br>
+<script type="text/javascript">
+//Мобильное меню
+$(function() {
+	var $menu_popup = $('.menu-popup');
+	
+	$(".menu-triger, .menu-close").click(function(){
+		$menu_popup.slideToggle(300, function(){
+			if ($menu_popup.is(':hidden')) {
+				$('body').removeClass('body_pointer');
+			} else {
+				$('body').addClass('body_pointer');
+			}					
+		});  
+		return false;
+	});			
+	
+	$(document).on('click', function(e){
+		if (!$(e.target).closest('.menu').length){
+			$('body').removeClass('body_pointer');
+			$menu_popup.slideUp(300);
+		}
+	});
+});
+
+</script>
+<div class="menu">
+
+		<a class="menu-triger" href="#"><img src="img/menu.png"></a>
+
+		<div class="menu-popup">
+
+			<a class="menu-close" href="#"></a>
+
+			<ul>
+				<li><a href="rules">Правила</a></li>
+
+				<li><a href="wiki">Вики</a></li>		
+
+				<li><a href="https://discord.gg/HsxSPyg7RG">Дискорд</a></li>
+
+				<li><a href="http://s23.joinserver.ru:25809/">PochkaMaps</a></li>
+
+			</ul>						
+
+		</div>
+
+	</div>
+
+<div class="realmenu">
+	<a href="rules" class="btn">Правила</a>
+	<a href="wiki" class="btn">Вики</a>
+	<a href="https://discord.gg/HsxSPyg7RG" class="btn">Дискорд</a>
+	<a href="http://s23.joinserver.ru:25809/" class="btn">PochkaMaps</a>
+</div>
+</div>
+
+<header class="header">
+<div class="offer">
+				<br>
+				<p class = "toptitle" id="ipadres">pochkacraft.joinserver.ru</p>
+				<h1>
+					POCHKACRAFT
+				</h1>
+				<p class = "toptitle">1.16.5</p>
+				<p class = "mainp">Ванильный, приватный сервер без доната и дурацких плагинов</p><br>
+				<a href = "freedays" class = "freedays-link">СЕЙЧАС БЕСПЛАТНЫЕ ДНИ</a>
+				<a href = "halloween" class = "ivent-link">ТЕКУЩИЙ ИВЕНТ: ХЭЛЛОУИН</a><br>
+				<a href="buy" class="buy"><img src="img/buy.png">Купить доступ на сервер</a><br>
+				<button class ="copy" onclick="copyToClipboard('#ipadres')"><img src="img/copy-logo.png" height="18px">Скопировать IP</button><br>
+				<div class="status">
+				<span class="server-online">⬤ Сервер оффлайн<style>.server-online{color:red;}</style></span><br>
+
+    			<span class="server-online-players" id="server-online-players">0</span> / <span class="server-online-players-max" id="server-online-players">20</span> <br>
+    			</div>
+			</div>
+</header>
+<div class="fix_block">
+<a href="halloween.html"><img width="350px" src="img/tikwa.png" border="0"/></a>
+</div>
+
+
+
+<div class="div-first-atall" id="b_1">
+<div class="gif">
+<img src="img/ovca.gif" width="400px" class="ovca">
+</div>
+
+<div class="textik">
+<h1>Сервер приватный?</h1>
+<p> Доступ на сервер ограничен и доступен по <span class="redmark">платной/бесплатной</span> проходке. </p>
+<p>Это означает что у нас <span class="redmark">отсутствуют все возможные донатные привилегии</span> ну и реклама на пол экрана о скидках тоже) <br><br>Всё что вы платите это ежемесячная проходка. Так сервер может окупать своё существование на хостинге, ну и приватность сервера = барьер от недобросовестных игроков. Новички же могут получить первый месяц бесплатно заполнив <a href="">анкету.</a></p>
+
+</div>
+</div>
+
+
+
+<div class="div-third-atall">
+<div class="div-third" id="b_3"><br>
+<center><h1>ОТВЕТЫ НА ВОПРОСЫ</h1></center>
+
+<div class = "question">
+	<h2>Нужна лицензия для игры?</h2>
+
+Нет, для игры на сервере <br>лицензия не нужна.
+</div>
+
+<div class = "question">
+	<h2>Какой айпи и версия серва?</h2>
+pochkacraft.joinserver.ru <br>Версия - 1.16.5
+</div>
+
+<div class = "question">
+	<h2>Нету приватов? Что делать?</h2>
+У нас есть логирование <br>блоков, подробнее - <a href="coreprotect">CoreProtect</a>
+</div>
+
+<div class = "question">
+	<h2>Можно играть с телефона?</h2>
+Нет. Сервер работает <br>только на Java Edition.
+</div>
+
+<div class = "question">
+	<h2>Как включить войс чат?</h2>
+Для этого необходимо просто установить мод.<br>
+<a href="voice">Подробнее</a>
+</div>
+
+</div>
+
+<div class="div-fourth-atall">
+<div class="div-fourth" id="b_3"><br>
+	<center><h2>Видео про PochkaCraft</h2><br>
+		
+		<br>
+
+
+	</center><br>
+</div>
+
+<iframe width="1000" height="530" src="https://www.youtube.com/embed/90Ref8FT0UI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<center><a href="https://youtube.com/playlist?list=PLU0vFHqNb9hfiDoeavfQG2nlzNI5ZXRwd">Больше видео</a></center>
 <br>
-<a href="http://s23.joinserver.ru:25809/">PochkaMaps</a><br>
-<a href="wiki">Вики</a><br>
-<a href="voice">Войс чат</a><br>
-<br>
-<text>ДО НОВОГО СЕЗОНА И САЙТА</text>
-<br><br>
-<script src="//megatimer.ru/get/ab08015f5b262be17c06e55c351adfdb.js"></script>
-</center>
+<a href="buy" class="buy"><img src="img/buy.png">Купить доступ на сервер</a><br>
+<footer>
+    <a href = "https://discord.gg/HsxSPyg7RG" class="foolink"> Дискорд </a> <br><a href = "votes.html">Проголосовать на мониторингах</a><br>
+    <text>© PochkaCraft 2021 | <a href="https://twitch.tv/lingkeras1n">Made by KeRas1n</a></text><br>
+    <text> We are in no way affiliated with or endorsed by Mojang, AB.</text><br>
+    <text>Вся размещенная информация на сайте не является публичной офертой.</text>
+</footer>
 </body>
 </html>
