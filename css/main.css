@@ -1,3 +1,92 @@
+.playico{
+	
+}
+.status{
+
+}
+.copy{
+	color: black;
+	background-color: #F4F4F5;
+	padding: 8px;
+
+	border-radius: 5px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	display: inline-flex;
+	font-family: 'Roboto', sans-serif;
+	border:none;
+}
+.copy:hover{
+	background-color: #d6d6d6;
+	color: black;
+	border:none;
+	cursor: pointer;
+}
+.buy{
+	color: white;
+	background-color: #0D9488;
+	padding: 8px;
+
+	border-radius: 5px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	display: inline-flex;
+	font-family: 'Roboto', sans-serif;
+ 
+}
+.buy:hover{
+	background-color: #0b857a;
+	color: white;
+}
+.link-season{
+	color: white;
+	background-color: #0D9488;
+	padding: 8px;
+
+	border-radius: 5px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	display: inline-flex;
+	font-family: 'Roboto', sans-serif;
+}
+.link-season img{
+	height: 25px;
+	width: 35px;
+	padding-right: 6px;
+}
+.link-season:hover{
+	background-color: #0b857a;
+	color: white;
+}
+.buy img{
+	width: 25px;
+	height: 25px;
+	
+}
+.selector{
+	padding: 10px;
+	
+	border-color: black;
+	display: block;
+	text-align: center;
+}
+.selector a{
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	border-color: black;
+	border: solid;
+}
+.selector a:hover{
+	color: white;
+	padding: 10px;
+	border-color: black;
+	border: solid;
+	background-color: gray;
+}
+.activated-select{
+	background-color: gray;
+}
 body{
 	background-color: #18181B;
 	font-size: 130%;
@@ -20,11 +109,11 @@ body{
   	width: 55%;
 }
 .article img{
-	width: 65%;
+	
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-	margin-top: 10px;
+	
 }
 /*НОВОЕ МЕНЮ МОБИЛЬНОЕ*/
 .menu-triger {
@@ -87,8 +176,8 @@ body{
 	cursor: pointer;
 }
 .donatepay{
-	width: 90%;
-	height: 900px;
+	width: 100%;
+	height: 1000px;
 
 	border:none;
 }
@@ -186,6 +275,28 @@ body{
 .question{
 	width: 90%;
 }
+.copy{
+	font-size: 35px;
+}
+.status{
+	font-size: 30px;
+}
+.copy img{
+	width: 45px;
+	height: 45px;
+}
+.buy{
+	font-size: 35px;
+}
+.buy img{
+	width: 45px;
+	height: 45px;
+}
+.selector a{
+	font-size: 250%;
+
+	display: block;
+}
 .donatepay{
 	width: 80%;
 }
@@ -196,7 +307,7 @@ body{
  width: 100%;
 }
 .wiki{
-	width: 70%;
+	width: 90%;
 }
 .textik{
 	display: block;
@@ -249,11 +360,20 @@ body{
   	text-decoration: none;
 
   	border-radius:9px;
-  	margin-right: auto;
+  	margin-right: 2px;
 	margin-left: auto;
 	margin-top: 0;
 	font-family: 'Roboto', sans-serif;
+
+
 }
+
+
+.text-block img{
+	
+	display: inline;
+}
+
 div.fix_block {
   right: 0;
   bottom: 0;
@@ -270,6 +390,11 @@ text-decoration: underline;
 h1{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 65px;
+	font-weight: bold;
+}
+h2{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 35px;
 	font-weight: bold;
 }
 .questtext{
@@ -295,39 +420,9 @@ h1{
 	display: block;
 	align-content: left;
 }
-.buy{
-	color: white;
-	background-color: #0D9488;
-	padding: 8px;
 
-	border-radius: 5px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	display: inline-flex;
-	font-family: 'Roboto', sans-serif;
-}
-.buy:hover{
-	background-color: #0b857a;
-	color: white;
-}
-.copy{
-	color: black;
-	background-color: #F4F4F5;
-	padding: 8px;
 
-	border-radius: 5px;
-	margin-top: 2px;
-	margin-bottom: 2px;
-	display: inline-flex;
-	font-family: 'Roboto', sans-serif;
-	border:none;
-}
-.copy:hover{
-	background-color: #d6d6d6;
-	color: black;
-	border:none;
-	cursor: pointer;
-}
+
 
 a{
 	text-decoration: none;
@@ -388,7 +483,7 @@ font-family: 'Open Sans', sans-serif;
 }
 
 header{
-	background-image: url('2.jpg') ;
+	background-image: url('2.gif') ;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-position: top;
