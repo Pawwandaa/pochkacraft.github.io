@@ -1,3 +1,6 @@
+.greenmark{
+	color: green;
+}
 .playico{
 	
 }
@@ -27,6 +30,7 @@
 	background-color: #0D9488;
 	padding: 8px;
 
+	border: none;
 	border-radius: 5px;
 	margin-top: 2px;
 	margin-bottom: 2px;
@@ -37,6 +41,26 @@
 .buy:hover{
 	background-color: #0b857a;
 	color: white;
+	cursor: pointer;
+}
+.btn-action{
+	color: white;
+	background-color: #0D9488;
+	padding: 8px;
+
+	font-size: 25px;
+	border: none;
+	border-radius: 5px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	display: inline-flex;
+	font-family: 'Roboto', sans-serif;
+ 
+}
+.btn-action:hover{
+	background-color: #0b857a;
+	color: white;
+	cursor: pointer;
 }
 .link-season{
 	color: white;
@@ -262,7 +286,9 @@ body{
 	margin:0;
 	padding: 15px;*/
 }
-
+.ivent-img{
+	width: 100%;
+}
 .head{
 	position: fixed;
 	width: 100%;
@@ -288,6 +314,9 @@ body{
 .buy{
 	font-size: 35px;
 }
+.buy-action{
+	font-size: 35px;
+}
 .buy img{
 	width: 45px;
 	height: 45px;
@@ -304,11 +333,14 @@ body{
 	width: 80%;
 }
 .article img{
- width: 100%;
+
+}
+.ivent-img{
+	width: 100%;
 }
 .wiki{
 	width: 90%;
-	font-size:30px;
+	font-size:30px; 
 }
 .textik{
 	display: block;
@@ -479,8 +511,9 @@ font-family: 'Open Sans', sans-serif;
 	display: block;
 	display: inline-block;
 	position: absolute;
-	top: 0;
+	top: 3;
 	left: 0;
+	width: 300px;
 }
 
 header{
